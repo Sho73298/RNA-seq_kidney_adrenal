@@ -1,6 +1,6 @@
 mkdir -p alignments
 
-for r1 in trimmed_fastq2/*_1_val_1.fq.gz
+for r1 in trimmed_fastq/*_1_val_1.fq.gz
 do
     r2=${r1/_1_val_1.fq.gz/_2_val_2.fq.gz}
     sample=$(basename "$r1" _val_1.fq.gz)
